@@ -1,0 +1,11 @@
+// function logger (frist, last){
+//     console.log(frist,last)
+// }
+// logger('SAN', 'ANH')
+// logger('ANH', 'AN')
+// logger('PASS', 'PV')
+const ctext = 12;
+{
+    var ctext = 10;
+    
+}

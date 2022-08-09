@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script>
+        //DOM
+        // const divDOM = document.createElement('div');
+        // divDOM.className = 'post-item';
+        // const h2DOM = document.createElement('h2');
+        // h2DOM.title = 'Hoc React tai F8';
+        // h2DOM.innerText = 'Hoc ReactJS';
+        // const pDOM = document.createElement('p');
+        // pDOM.innerText = 'Hoc ReactSJ tu co ban toi nang cao';
+        // divDOM.appendChild(h2DOM);
+        // divDOM.appendChild(pDOM);
+        // document.body.appendChild(divDOM);
+        // const ulDOM = document.createElement('ul');
+        // ulDOM.className = 'ul-dom';
+        // ulDOM.id = 'ul-list';
+        // ulDOM.style = 'color: green; font-size: 40px;';
+        // const li1DOM = document.createElement('li');
+        // li1DOM.className = 'li-dom';
+        // li1DOM.innerText = 'Javascript';
+        // const li2DOM = document.createElement('li');
+        // li2DOM.innerText = 'ReactJs';
+        // ulDOM.appendChild(li1DOM);
+        // ulDOM.appendChild(li2DOM);
+        // document.body.appendChild(ulDOM);
+        //    const h1DOM = document.createElement('h1');
+        //    h1DOM.title = 'hello';
+        //    h1DOM.className = 'heading';
+        //    h1DOM.innerText = 'Hello may cung ';
+        //    document.body.appendChild(h1DOM);
+        //React
+        const divReact = React.createElement(
+            'div',
+            { className: 'post-item' },
+            React.createElement('h2', { title: 'Hoc React tai F8' }, 'Hoc React JS'),
+            React.createElement('p', null, 'Hoc ReactJS tu co ban toi nang cao')
+        );
+
+        const ulReact = React.createElement(
+            'ul',
+            { id: 'ul-react', style: 'color: green; font-size: 40px;', },
+            React.createElement('li', null, 'Javascript'),
+            React.createElement('li', null, 'ReactJs'),
+        );
+
+        const h1React = React.createElement('h1', {
+            title: 'Hello',
+            className: 'heading',
+        }, 'Hello emmm');
+
+
+        //Get root element
+        const container = document.getElementById('root')
+        //React@17
+        //React-DOM -> Render UI
+        // ReactDOM.render(divReact,root);
+        const root = React.createElement(container)
+        root.render(divReact)
+    </script>
+</body>
+
+</html>

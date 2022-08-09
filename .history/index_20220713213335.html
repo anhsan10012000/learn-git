@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+</head>
+<body>
+   
+    <script>
+        //DOM
+        const ulDOM = document.createElement('ul');
+        const li1DOM = document.createElement('li');
+        li1DOM.innerText = 'Javascript';
+        const li2DOM = document.createElement('li');
+        li2DOM.innerText = 'ReactJs';
+        ulDOM.appendChild(li1DOM,li2DOM);
+        // ulDOM.appendChild(li2DOM);
+        document.body.append(ulDOM);
+    //    const h1DOM = document.createElement('h1');
+    //    h1DOM.title = 'hello';
+    //    h1DOM.className = 'heading';
+    //    h1DOM.innerText = 'Hello may cung ';
+    //    document.body.appendChild(h1DOM);
+       //React
+       const h1React = React.createElement('h1',{
+        title: 'Hello',
+        className: 'heading',
+       }, 'Hello emmm');
+       console.dir(h1DOM);
+       console.log(h1React);
+    </script>
+</body>
+</html>
